@@ -1,0 +1,30 @@
+ 
+
+ <div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Bio</th>
+                            </tr>
+                        </thead>
+   
+                        {% for s in form %}
+                        <tr>
+                            <td>{{forloop_counter}}</td>
+                            <td>{{s.name}}</td>
+                            <td>{{s.email}}</td>
+                            <td>{{s.bio}}</td>
+                        </tr>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
